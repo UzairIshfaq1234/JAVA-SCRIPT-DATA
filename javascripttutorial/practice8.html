@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classw</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="demo2"></div>
+
+</body>
+<script>
+    class student
+    {
+        constructor(name,roll,course)
+        {
+            this.name=name;
+            this.roll=roll;
+            this.course=course;
+
+        }
+
+
+    }
+    let stud=new student("Muhammad Uzair",030,"BSCS");
+    console.log("DATA: "+stud.name+"--"+stud.course);
+    let dta="DATA: "+stud.name+"--"+stud.course;
+    document.getElementById("demo").innerHTML=dta;
+
+    let stud2=new student("Muhammad awais",011,"BSAF");
+    console.log("DATA: "+stud2.name+"--"+stud2.course);
+    let dta2="DATA: "+stud2.name+"--"+stud2.course;
+    document.getElementById("demo2").innerHTML=dta2;
+
+
+</script>
+</html>

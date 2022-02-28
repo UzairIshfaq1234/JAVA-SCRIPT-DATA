@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDITION STATMNET</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 900px;
+    }
+
+    .yourgae {
+        color: white;
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 900px;
+    }
+
+    #ageis {
+        color: rgb(13, 227, 255);
+        font-size: 35px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 900px;
+        margin-left: 140px;
+    }
+
+    #elibikty {
+        color: rgb(13, 227, 255);
+        font-size: 35px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 1000px;
+        margin-left: 30px;
+
+    }
+
+    #getage {
+        border: none;
+        border-radius: 0px;
+        width: 300px;
+        height: 20px;
+    }
+
+    #done {
+        border: none;
+        width: 100px;
+        height: 20px;
+        margin-top: 30px;
+        background-color: white;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 19px;
+    }
+</style>
+
+<body>
+    <H1>CONDITION STATMNET</H1>
+
+    <input type="number" id="getage">
+    <div class="yourgae">Your Age is:<span id="ageis"></span> </div>
+    <div class="yourgae">Eligible for Licience:<span id="elibikty"></span> </div>
+    <button onclick="calculateeligible()" id="done">Start</button>
+
+
+
+
+</body>
+<script>
+    function calculateeligible() {
+        let age_of_person =document.getElementById("getage").value;
+        if (age_of_person > 18) {
+            document.getElementById("ageis").innerHTML = age_of_person;
+            document.getElementById("elibikty").innerHTML = "Eligible!";
+            alert("You are eligible");
+
+        }
+        else if (age_of_person == 18) {
+            document.getElementById("ageis").innerHTML = age_of_person;
+            document.getElementById("elibikty").innerHTML = "Need to wait for one year!";
+        }
+        else {
+            document.getElementById("ageis").innerHTML = age_of_person;
+            document.getElementById("elibikty").innerHTML = "Not Eligible!";
+        }
+
+
+        console.log("Age is :"+age_of_person);
+    }
+
+
+
+
+</script>
+
+</html>

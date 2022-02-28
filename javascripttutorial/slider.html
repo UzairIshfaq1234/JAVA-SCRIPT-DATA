@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #179eec;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #1e8de7;
+  cursor: pointer;
+}
+.sliderdetils
+{
+    display: flex;
+}
+.data0
+{
+    font-weight: bolder;
+
+}
+.data1
+{
+    margin-left: 600px;
+    font-weight: bolder;
+
+}
+.data2
+{
+    margin-left: 670px;
+    font-weight: bolder;
+}
+.head2
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+
+
+<div class="slidecontainer">
+    <h3 class="head2">How many session does your website get per month?</h3>
+ 
+
+  <input type="range" min="1" max="13000" value="50" class="slider" id="myRange">
+  
+  <div class="sliderdetils">
+
+    <div class="data0">0</div>
+    <div class="data1">6000</div>
+    <div class="data2">13000</div>
+
+</div>
+  <p>Value: <span id="demo"></span></p>
+</div>
+
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM EVENTLISTERNER</title>
+</head>
+<style>
+    body{
+        background-color: rgb(0, 0, 0);
+    }
+    #head1
+    {
+        color:rgb(255, 255, 255);
+        text-align: center;
+        font-family: sans-serif;
+    }
+</style>
+<body id="boday1">
+
+    <h1 id="head1" onclick="changecolor()" onmouseenter=" changecolor2() ">HELLO! JAVASCRIPTER...</h1>   
+    
+</body>
+<script>
+    //let x=document.getElementById("head1");
+    //x.addEventListener("click",changecolor);
+//x.addEventListener("mouseout",changecolor2);
+
+
+
+
+    function changecolor()
+    {
+        document.getElementById("boday1").style.backgroundColor="  #d9267d";
+        document.getElementById("head1").style.color="black";
+
+
+    }
+    function changecolor2()
+    {
+        document.getElementById("boday1").style.backgroundColor="   #c99ccc";
+        document.getElementById("head1").style.color="white";
+
+
+    }
+</script>
+</html>

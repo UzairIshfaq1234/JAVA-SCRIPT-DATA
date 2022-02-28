@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function JavaScript</title>
+</head>
+<style>
+    #agecollector {
+        width: 300px;
+        background-color: black;
+        color: white;
+        height: 30px;
+    }
+
+    #agepermission {
+        width: 200px;
+        height: 30px;
+    }
+</style>
+
+<body>
+    <div class=agecalulator>
+
+        <input type="number" id="agecollector">
+        <button onclick="show()" id="agepermission">Submit</button>
+        <div id="texteage"></div>
+
+    </div>
+
+    <p>Name:</p>
+    <h6 id="nameget"></h6>
+
+    <p>Section:</p>
+    <h6 id="sectionget"></h6>
+
+    <p>course:</p>
+    <h6 id="courseget"></h6>
+
+
+
+
+</body>
+<!-- <script>
+    let data1 =20;
+    let age = 18
+    function show() {
+
+        if (data1 >= age) {
+            console.log(data1);
+            document.getElementById("texteage").innerHTML = "your are elogible";
+        }
+        else if(data1 < age)
+        {
+            console.log(data1);
+            document.getElementById("texteage").innerHTML = "your are not elogible";
+        }
+
+    }
+</script> -->
+
+<script>
+    let uzair={
+        name:"Muhammad Uzair Ishfaq",
+        section:"Seaction A",
+        course:"BSCS"
+
+    }
+
+    console.log(uzair.name);
+    document.getElementById("nameget").innerHTML=uzair.name;
+
+    console.log(uzair.section);
+    document.getElementById("sectionget").innerHTML=uzair.section;   
+    
+    console.log(uzair.course);
+    document.getElementById("courseget").innerHTML=uzair.course;
+</script>
+
+</html>

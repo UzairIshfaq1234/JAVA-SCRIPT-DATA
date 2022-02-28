@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date function</title>
+</head>
+<style>
+#timeshoww
+{
+    color:rgb(255, 0, 0);
+    font-weight: bolder;
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+</style>
+<body>
+    <h5 id="datelabel">DATE: </h5>
+    <h2 id="dateshow"></h2>
+    <h2 id="timeshoww"></h2>
+
+
+    
+</body>
+<script>
+    //let date2=date1.getDate()+"-"+date1.getMonth()+"-"+date1.getFullYear();
+    //document.getElementById("dateshow").innerHTML=date1;
+    //document.getElementById("dateshow").innerHTML=date2;
+    function showtime()
+    {
+        date1=new Date();
+        let time=date1.getHours()+"-"+date1.getMinutes()+"-"+date1.getSeconds();
+        date1.setFullYear(2020, 11, 3)//set date accorudubgf to self
+        document.getElementById("dateshow").innerHTML=date1;
+
+        document.getElementById("timeshoww").innerHTML=time;
+
+    }
+
+
+    
+    setInterval (showtime,1000);
+
+
+
+
+</script>
+</html>

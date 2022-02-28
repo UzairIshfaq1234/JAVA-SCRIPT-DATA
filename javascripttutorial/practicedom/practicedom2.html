@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+</head>
+<style>
+
+    #select2
+    {
+        display: none;
+        
+    }
+
+</style>
+
+<body id="body1">
+
+    <p id="p2">Hello World!</p>
+    <button id="select" onclick=gochnage()>Change this</button>
+    <button id="select2" onclick=gochnage1()>Change this back</button>
+
+
+    <script>
+        function gochnage() {
+            document.getElementById("p2").style.color = "black";
+            document.getElementById("p2").style.fontFamily = "Arial";
+            document.getElementById("body1").style.backgroundColor = "white";
+            document.getElementById("p2").style.textShadow = "1px 1px 10px red";
+
+            document.getElementById("p2").style.fontSize = "150px";
+            document.getElementById("p2").style.position = "absolute";
+            document.getElementById("select").style.display = "none";
+            document.getElementById("select2").style.display = "block";
+
+         }
+
+         function gochnage1() {
+            document.getElementById("p2").style.color = "red";
+            document.getElementById("p2").style.textShadow = "1px 1px 10px red";
+            document.getElementById("body1").style.backgroundColor = "black";
+            document.getElementById("p2").style.fontFamily = "Arial";
+            document.getElementById("p2").style.fontSize = "150px";
+            document.getElementById("p2").style.position = "absolute";
+            document.getElementById("select").style.display = "block";
+            document.getElementById("select2").style.display = "none";
+
+
+         }
+    </script>
+
+</body>
+
+</html>

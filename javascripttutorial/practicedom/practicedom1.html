@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <p id="demo1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam est reprehenderit error?</p>
+    <p id="demo3">Muhammad Uzair ishfaq</p>
+    <p id="demo2"></p> -->
+
+
+
+
+    <form name="myForm" action="/action_page.php" onsubmit=" return validateForm()" method="post">
+        Name: <input type="text" name="fname" required>
+        Age: <input type="number" name="fnumber">
+        <input type="submit" value="Submit" >
+
+    </form>
+
+</body>
+<script>
+    // let element1=document.getElementById("demo1").innerHTML;
+    // let element2=document.getElementById("demo3").innerHTML;
+    // document.getElementById("demo2").innerHTML="Data is: "+element2+"_____________________________"+element1
+
+
+
+
+    function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        let y = document.forms["myForm"]["fnumber"].value;
+
+        if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+
+        else if (y == "") {
+            alert("age must be filled out");
+            return false;
+        }
+    }
+
+</script>
+
+</html>

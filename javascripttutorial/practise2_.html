@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise JavaScript</title>
+</head>
+
+<style>
+    #showwcontent {
+        color: white;
+        background-color: rgb(0, 0, 0);
+        width: 300px;
+        height: 30px;
+        text-align: center;
+        padding-top: 10px;
+        font-weight: bolder;
+    }
+
+    .card {
+        background-color: rgb(30, 255, 218);
+        width: 300px;
+        height: 340px;
+        border-radius: 10px;
+        position: absolute;
+        margin-left: 490px;
+
+    }
+
+    .signuphead {
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        text-align: center;
+        padding-top: 10px;
+        color: rgb(0, 0, 0);
+        font-weight: 100px;
+    }
+
+    .parasignup {
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        text-align: center;
+        padding-top: 10px;
+        color: rgb(90, 88, 88);
+        font-weight: 100px;
+    }
+
+    #closingsignup {
+        text-align: center;
+        width: 100px;
+        border: none;
+        background-color: red;
+        color: black;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200px;
+        margin-left: 30%;
+        margin-top: 3%;
+        cursor: pointer;
+
+
+        
+
+    }
+</style>
+
+<body>
+    <h1 class="headingt1">PRACTICE JAVASCRIPT--!</h1>
+    <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio impedit iure adipisci rem dolores
+        voluptatum, temporibus magni similique fuga ullam nemo alias possimus inventore quasi tempore voluptatibus?
+        Impedit suscipit quibusdam ratione illo commodi aliquid dolorem deleniti nam odit, itaque cum modi tempora
+        mollitia minima eius consectetur delectus assumenda aut aliquam.</p>
+    <button id="changeitem" onclick="changeitem()">Change paragarph!</button>
+    <p id="showwcontent">Hello your work is succesfuly updated</p>
+    <button id="download " onclick="signupitem()">signup!</button>
+
+    <div id="card" class="card">
+        <h4 class="signuphead">Signup</h4>
+        <div id="parasignup" class="parasignup">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+            corporis sequi maxime quae non sint nihil tempore sunt, eveniet omnis voluptas fugiat aliquam, molestias
+            nesciunt magnam. Blanditiis repellendus dolorem alias.</div>
+        <button id="closingsignup" onclick="closemessage()">Close</button>
+    </div>
+
+</body>
+
+<script>
+
+    function closemessage()
+    {
+        document.getElementById("parasignup").innerHTML="data is closed"
+    }
+
+
+
+</script>
+
+</html>
